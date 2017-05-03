@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layout_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/img_btn_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:padding="5dp"
+            android:src="@drawable/live_fullscreen_back_selector"/>
+
+        <LinearLayout
+            android:id="@+id/top_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/check_gift_switch"
+                style="@style/NormalRadioStyle"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/live_land_view_selector"
+                android:padding="10.0dip"
+                android:text="屏蔽礼物"
+                android:textColor="#ff797c80"
+                android:textSize="16.0sp"/>
+
+            <TextView
+                android:id="@+id/txt_btn_clarity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/live_land_view_selector"
+                android:padding="10dp"
+                android:textColor="#ff797c80"
+                android:textSize="16sp"/>
+
+            <CheckBox
+                android:id="@+id/check_focus"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/live_btn_hor_collect"
+                android:button="@null"/>
+
+            <ImageView
+                android:id="@+id/img_btn_share"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="20.0dip"
+                android:src="@drawable/live_btn_hor_share_selector"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_btn_describe"
+            style="@style/font_15"
+            android:layout_height="44dp"
+            android:layout_toLeftOf="@+id/top_ll"
+            android:layout_toRightOf="@+id/img_btn_back"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:textColor="#ff797c80"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txt_get_seed"
+        style="@style/font_12"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/live_shape_seed"
+        android:drawablePadding="2dp"
+        android:drawableTop="@drawable/live_new_big_seed"
+        android:gravity="center"
+        android:padding="5.0dip"
+        android:text="领取"
+        android:textColor="@color/login_edt_hint_color"/>
+
+    <ListView
+        android:id="@+id/lv_quality"
+        style="@style/list_base"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_topbar"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/live_rect_charity_list"
+        android:clickable="true"
+        android:listSelector="@color/black"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_volume_brightness"
+        style="@style/font_13"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@color/system_tips_bg"
+        android:drawablePadding="3dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5.0dip"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/layout_bottom_thelive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:fitsSystemWindows="false">
+
+        <CheckBox
+            android:id="@+id/rad_btn_player_switch"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/live_btn_fullscreen_pause_selector"
+            android:button="@null"/>
+
+        <ImageView
+            android:id="@+id/img_btn_refresh"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginRight="10.0dip"
+            android:layout_toRightOf="@+id/rad_btn_player_switch"
+            android:src="@drawable/live_btn_hor_refresh"/>
+
+        <RelativeLayout
+            android:layout_width="432dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@+id/rad_btn_danmu_switch"
+            android:layout_toRightOf="@+id/img_btn_refresh"
+            android:background="@drawable/live_bg_hor_et"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <ImageView
+                android:id="@+id/txt_btn_hot_word"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:padding="6.0dip"
+                android:src="@drawable/live_btn_hot_word_selector"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5.0dip"
+                android:layout_toRightOf="@+id/txt_btn_hot_word"
+                android:background="#23ffffff"/>
+
+            <EditText
+                android:id="@+id/ediit_comment"
+                style="@style/font_14"
+                android:layout_width="432dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15.0dip"
+                android:layout_toLeftOf="@+id/img_btn_send"
+                android:layout_toRightOf="@+id/txt_btn_hot_word"
+                android:background="@color/black"
+                android:hint="在这里输入弹幕"
+                android:imeOptions="actionSend|flagNoExtractUi"
+                android:maxLength="20"
+                android:padding="5dp"
+                android:textColor="#ffffffff"
+                android:textColorHint="#23ffffff"/>
+
+            <ImageView
+                android:id="@+id/img_btn_send"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="5.0dip"
+                android:src="@drawable/live_btn_hor_send_selector"/>
+        </RelativeLayout>
+
+        <CheckBox
+            android:id="@+id/rad_btn_danmu_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7.0dip"
+            android:layout_toLeftOf="@+id/img_btn_gift"
+            android:background="@drawable/live_btn_danmu_open_switch_selector"
+            android:button="@null"/>
+
+        <ImageView
+            android:id="@+id/img_btn_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="15.0dip"
+            android:src="@drawable/live_gift"/>
+    </LinearLayout>
+
+</RelativeLayout>

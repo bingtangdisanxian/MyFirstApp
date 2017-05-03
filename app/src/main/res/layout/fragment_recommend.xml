@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.project.mine.wedgit.refresh.MyPullRefreshFrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/refresh_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv_recommend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <include layout="@layout/pager_loading"/>
+
+        <include layout="@layout/pager_error"/>
+
+    </FrameLayout>
+
+</com.project.mine.wedgit.refresh.MyPullRefreshFrameLayout>

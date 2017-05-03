@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--底部导航栏-->
+    <color name="Bottom_Navigation_Bar_InActiveColor">#000000</color>
+    <color name="Bottom_Navigation_Bar_ActiveColor">#f90202</color>
+    <color name="Bottom_Navigation_Bar_background">#FFFFFF</color>
+    <color name="colorTransparent">#faf8f8</color>
+
+    <!--顶部导航栏-->
+    <color name="colorMain">#fa315d</color>
+    <color name="colorGray">#888888</color>
+    <color name="colorLightGray">#ece8e8</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorWhite_gray">#ebe6e6</color>
+    <color name="white">#ffffffff</color>
+    <color name="text_color">#ff333333</color>
+    <color name="text_gray">#8034373b</color>
+    <color name="black">#000000</color>
+    <color name="black_gray">#1b1a1a</color>
+    <color name="black_40">#65000000</color>
+    <color name="gift_pop_item">#ff333333</color>
+    <color name="login_edt_hint_color">#ffcccccc</color>
+    <color name="system_tips_bg">#60000000</color>
+    <color name="text_03">#4c34373b</color>
+    <color name="red">#ffff0000</color>
+    <color name="colorTheme">#ffce3d3a</color>
+    <color name="colorContent">#ff333333</color>
+    <color name="Gray">#808080</color>
+    <color name="color_Transparent">#00000000</color>
+
+</resources>

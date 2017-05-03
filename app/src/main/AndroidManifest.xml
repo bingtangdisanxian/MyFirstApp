@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.project.mine">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- 打开/关闭WiFi -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:name=".base.app.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".base.activity.WelcomeGuideActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.MainActivity"/>
+        <activity android:name=".ui.home.live.impl.LivePlayerActivity"/>
+        <activity android:name=".ui.yunyue.chenqi.rank.MovieTopActivity"/>
+        <activity android:name=".ui.yunyue.chenqi.detail.DetailActivity"/>
+        <activity android:name=".ui.yunyue.zhongyuan.welfare.WelfareActivity"/>
+        <activity android:name=".ui.yunyue.zhongyuan.android.BigAndroidActivity"/>
+        <activity android:name=".ui.yunyue.shuaishuai.detail.BookDetailActivity"/>
+        <activity android:name=".ui.yunyue.chenqi.detail.LatestDetailActivity"/>
+    </application>
+
+</manifest>

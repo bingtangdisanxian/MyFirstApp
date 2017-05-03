@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--顶部布局-->
+        <RelativeLayout
+            android:background="@color/colorTheme"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:clickable="true"
+                android:padding="3dp"
+                android:src="@drawable/ic_top_search"/>
+
+            <TextView
+                android:id="@+id/tv_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/common_margin"
+                android:text="云阅直播"
+                android:textColor="@color/colorWhite"
+                />
+
+            <ImageView
+                android:id="@+id/iv_chat"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:clickable="true"
+                android:padding="3dp"
+                android:src="@drawable/bottom_navigation_item_chat"/>
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/smartTabLayout"
+            layout="@layout/tab_layout_home"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <!--用来展示替换的内容,点击后才显示-->
+            <FrameLayout
+                android:id="@+id/frame_change_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorLightGray"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/pager_loading"/>
+
+    <include layout="@layout/pager_error"/>
+
+</RelativeLayout>

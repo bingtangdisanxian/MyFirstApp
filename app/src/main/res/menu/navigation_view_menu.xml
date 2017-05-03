@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_main"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/slid_home"
+            android:icon="@drawable/ic_slid_home"
+            android:title="@string/text_nav_home"/>
+        <item
+            android:id="@+id/slid_collect"
+            android:icon="@drawable/ic_slid_download"
+            android:title="@string/text_nav_bookmarks"/>
+        <item
+            android:id="@+id/slid_question"
+            android:icon="@drawable/ic_slid_collect"
+            android:title="@string/text_nav_question"/>
+    </group>
+
+    <group
+        android:id="@+id/group_other"
+        android:checkableBehavior="none">
+        <item
+            android:id="@+id/slid_theme"
+            android:icon="@drawable/ic_slid_theme"
+            android:title="@string/text_change_theme"/>
+
+        <item
+            android:id="@+id/slid_loading"
+            android:icon="@drawable/ic_slid_loading"
+            android:title="@string/text_nav_loading"/>
+
+        <item
+            android:id="@+id/slid_about"
+            android:icon="@drawable/ic_slid_about"
+            android:title="@string/text_nav_about"/>
+
+        <item
+            android:id="@+id/slid_exit"
+            android:icon="@drawable/ic_slid_exit"
+            android:title="@string/text_nav_exit"/>
+    </group>
+</menu>

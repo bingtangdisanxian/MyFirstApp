@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_thumb"
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_default_cover"/>
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iv_thumb"
+                android:layout_margin="5.0dip"
+                android:background="@drawable/live_corner_num_bg"
+                android:drawableLeft="@drawable/live_ic_player_content_number"
+                android:drawablePadding="2.0dip"
+                android:minWidth="30dp"
+                android:paddingBottom="1.0dip"
+                android:paddingLeft="5.0dip"
+                android:paddingRight="5.0dip"
+                android:paddingTop="1.0dip"
+                android:text="1.1万"
+                android:textColor="@color/colorWhite"
+                android:textSize="10.0sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/infoContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_head">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/icon_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:padding="6dp"
+                android:src="@drawable/ic_default_head"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/icon_head">
+
+                <TextView
+                    android:id="@+id/nick_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="国服第一打野成成天慢各种坑"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/room_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/nick_name"
+                    android:text="肌肉飒飒撒"
+                    android:textColor="@color/black_gray"
+                    android:textSize="10sp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

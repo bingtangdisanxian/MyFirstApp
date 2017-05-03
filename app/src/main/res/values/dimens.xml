@@ -1,0 +1,24 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--自定义-->
+    <dimen name="common_margin">12dp</dimen>
+
+    <!--直播UI相关-->
+    <dimen name="status_bar_height">0dp</dimen>
+    <dimen name="vertical_video_height">300dp</dimen>
+    <dimen name="fullscreen_topmargin">36dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <!--详情UI相关-->
+    <dimen name="nav_bar_height">56dp</dimen>
+    <dimen name="nav_bar_height_more">58dp</dimen>
+
+    <!--渐变时还没到布局全部就已经不透明了，距离 45dp-->
+    <dimen name="base_header_activity_slide_more">45dp</dimen>
+    <dimen name="movie_detail_width">125dp</dimen>
+    <dimen name="movie_detail_height">165dp</dimen>
+</resources>
